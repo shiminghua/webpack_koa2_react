@@ -32,7 +32,7 @@ const isDev = app.env !== 'production';
 /***************************
  * webpack 配置
  */
-if (!isDev) {
+if (isDev) {
 
     // app.reload = true;
 
@@ -44,14 +44,14 @@ if (!isDev) {
     let compiler = webpack(webpackBaseConfig);
 
     // attach to the compiler & the server
-    app.use(webpackDevMiddleware(compiler, {
-        publicPath: webpackBaseConfig.output.publicPath, // public path should be the same with webpack config
-        noInfo: true,
-        stats: {
-            colors: true
-        }
-    }));
-    app.use(webpackHotMiddleware(compiler));
+    // app.use(webpackDevMiddleware(compiler, {
+    //     publicPath: webpackBaseConfig.output.publicPath, // public path should be the same with webpack config
+    //     noInfo: true,
+    //     stats: {
+    //         colors: true
+    //     }
+    // }));
+    // app.use(webpackHotMiddleware(compiler));
 
 }
 
