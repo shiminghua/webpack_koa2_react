@@ -1,0 +1,27 @@
+{
+  "name": "webpack_koa2_react",
+  "version": "1.0.0",
+  "description": "webpack koa2 react",
+  "main": "index.js",
+  "scripts": {
+    "test": "app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiminghua/webpack_koa2_react.git"
+  },
+  "keywords": [
+    "webpack",
+    "koa2",
+    "react"
+  ],
+  "author": "minghua.shi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shiminghua/webpack_koa2_react/issues"
+  },
+  "homepage": "https://github.com/shiminghua/webpack_koa2_react#readme",
+  "devDependencies": {
+    "webpack": "^1.13.1"
+  }
+}
