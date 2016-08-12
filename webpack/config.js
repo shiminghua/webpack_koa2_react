@@ -24,8 +24,10 @@ const buildConfig = {
     html: path.join(baseConfig.root, '/views/**/*.html')
 };
 
-const config = Object.assign({}, baseConfig, buildConfig);
+const srcConfig = {
+    clientSrc: path.join(buildConfig.client, 'resources')
+};
 
-// console.log(config);
+const config = Object.assign({}, baseConfig, buildConfig, srcConfig);
 
 module.exports = config;

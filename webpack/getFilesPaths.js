@@ -8,27 +8,19 @@ let entry = Object.create(null);
 /*******
  * entry
  */
-function getEntry () {
-    // 获取路径
-    const jsPath = path.join(config.clientSrc, '/**/*index.js');
+function getPaths (pattern) {
     // 同步获取入口文件地址的数组
-    let arrPaths = glob.sync(jsPath);
+    let arrPaths = glob.sync(pattern);
     // 遍历数组设置entry属性
     arrPaths.forEach(function(path) {
         entry[getEntryKey(path)] = [path];
     });
-
-    // 提取React,jQuery等库文件
-    // entry.react = ['react', 'react-dom'];
-    for(let key in config.commonChunk) {
-        entry[key] = config.commonChunk[key];
-    }
 }
 
 /********
  * 获取entry的key值
  */
-function getEntryKey(jspath) {
+function getKey(jspath) {
     // 标准化路径
     let clientSrc = path.join(config.clientSrc, '/');
     let winPath = path.normalize(jspath);
@@ -39,6 +31,10 @@ function getEntryKey(jspath) {
     return key;
 }
 
-getEntry();
+// 获取路径
+const jsPath = path.join(config.clientSrc, '/**/*index.js');
+getEntry(jsPath);
 
-module.exports = entry;
+module.exports = {
+    getPaths: getPaths
+};

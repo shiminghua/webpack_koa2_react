@@ -72,7 +72,7 @@ if (isDev) {
 
         // public path to bind the middleware to
         // use the same as in webpack
-        publicPath: "/assets/",
+        publicPath: webpackBaseConfig.output.publicPath,
 
         // custom headers
         headers: { "X-Custom-Header": "yes" },
