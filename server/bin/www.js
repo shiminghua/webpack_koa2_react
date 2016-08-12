@@ -21,16 +21,6 @@ const port = normalizePort(process.env.PORT || config.server.port);
  */
 const server = http.createServer(app.callback());
 
-/*******
- * webpack
- */
-// const isDev = app.env !== 'production';
-// if (isDev) {
-//     console.log('------', app);
-//     let reload = require('reload');
-//     reload(server, app);
-// }
-
 /***********
  * Listen on provided port, on all network interfaces.
  * 在所有网络接口上监听提供的端口。
