@@ -10,7 +10,7 @@ const koaStatic = require('koa-static');
 
 const app = new koa();
 
-const config = require('./config/config.server.js'); // 配置文件
+const config = require('./server/config/config.server.js'); // 配置文件
 
 /*******************
  * mongodb 
@@ -106,8 +106,6 @@ app.use(views(config.server.path + '/views', {
  * 网站路由
  */
 const index = require('./server/routes/index');
-router.use('/js', index.routes(), index.allowedMethods());
-// router.use('/js', index.routes(), index.allowedMethods());
 app.use(router.routes()).use(router.allowedMethods());
 
 

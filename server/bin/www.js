@@ -9,7 +9,7 @@ require('babel-polyfill');
 const app = require('../../app');
 const debug = require('debug')('demo:server');
 const http = require('http');
-const config = require('../../config/config.server');
+const config = require('../config/config.server');
 
 /********
  * 获取端口

@@ -10,10 +10,10 @@ const NODE_ENV = process.env.NODE_ENV === 'production' ? 'production' : 'develop
 
 // 设置 webpack.optimize.CommonsChunkPlugin 公共模块抽取时的 name 值
 function getCommonsChunkNames() {
-    let ConfigureCommonChunks =  config.commonChunk;
+    let ConfigureCommonChunks = config.commonChunk;
     let commonChunkNames = [];
 
-    for(let key in ConfigureCommonChunks) {
+    for (let key in ConfigureCommonChunks) {
         commonChunkNames.push(key);
     }
     return commonChunkNames;
@@ -40,7 +40,7 @@ let pluginsArr = [
     new webpack.optimize.OccurenceOrderPlugin(),
     // 报错不退出
     new webpack.NoErrorsPlugin()
-]; 
+];
 
 /******** 
  * webpack 基本配置
@@ -59,7 +59,7 @@ let webpackBaseConfig = {
         // 文件路径
         path: config.build,
         // 用来配置生成的文件名, 比如 [hash] 用于生成 Hash, [name] 是入口文件 entry 的 key 值
-        filename: 'javascript/[name]/index.min.js'
+        filename: 'javascript/[path][name].min.js'
     },
     /********
      * 模块
@@ -101,7 +101,7 @@ let webpackBaseConfig = {
                 exclude: /node_modules/,
                 // include: /^client\/*/,
                 loaders: [
-                    'file?name=style/[name]/[name]-.min.css',
+                    'file?name=style/[name]-.min.css',
                     'extract',
                     'css'
                 ]
@@ -112,7 +112,7 @@ let webpackBaseConfig = {
                 exclude: /node_modules/,
                 // include: /^client\/*/,
                 loaders: [
-                    'file?name=style/[path][name]/index.min.css&context=' + path.join(config.client, 'resources/'),
+                    'file?name=style/[name]/index.min.css&context=' + path.join(config.client, 'resources/'),
                     'extract',
                     'css',
                     'less'
@@ -135,10 +135,10 @@ let webpackBaseConfig = {
                 test: /\.(png|jpeg|jpg|gif)$/, // (png|jpe?g|gif)
                 exclude: /node_modules/,
                 // loader: 'url?limit=4096&name=images/[path]/[name].[ext]&context=' + config.client
-                loaders: process.env.NODE_ENV === 'development' ? 
-                    ['url?limit=4096&name=images/[path][name].[ext]&context=' + config.client] : 
-                    ['url?limit=4096&name=images/[path][name].[ext]&context=' + config.client, 
-                    'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}']
+                loaders: process.env.NODE_ENV === 'development' ?
+                    ['url?limit=4096&name=images/[name].[ext]&context=' + config.client] :
+                    ['url?limit=4096&name=images/[name].[ext]&context=' + config.client,
+                        'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}']
             }
         ]
     },
@@ -170,7 +170,7 @@ let webpackBaseConfig = {
     /********************
      * 插件
     */
-    plugins: pluginsArr.concat(htmlPlugin)
+    plugins: pluginsArr
 };
 console.log(webpackBaseConfig);
 module.exports = webpackBaseConfig;

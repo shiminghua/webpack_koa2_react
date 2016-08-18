@@ -20,12 +20,12 @@ const buildConfig = {
     client: path.join(baseConfig.root, '/client'),
     server: path.join(baseConfig.root, '/server'),
     http: 'http://' + baseConfig.host + (baseConfig.port ? (':' + baseConfig.port) : '') + '/',
-    publicPath: 'http://' + baseConfig.host + (baseConfig.port ? (':' + baseConfig.port) : '') + '/',
-    html: path.join(baseConfig.root, '/views/**/*.html')
+    publicPath: 'http://' + baseConfig.host + (baseConfig.port ? (':' + baseConfig.port) : '') + '/'
 };
 
 const srcConfig = {
-    clientSrc: path.join(buildConfig.client, 'resources')
+    html: path.join(buildConfig.client, '/views/**/*index.html'), 
+    js: path.join(buildConfig.client, '/resources/**/*index.js')
 };
 
 const config = Object.assign({}, baseConfig, buildConfig, srcConfig);
