@@ -59,7 +59,7 @@ let webpackBaseConfig = {
         // 文件路径
         path: config.build,
         // 用来配置生成的文件名, 比如 [hash] 用于生成 Hash, [name] 是入口文件 entry 的 key 值
-        filename: 'javascript/[name]/index.min.js'
+        filename: path.normalize('javascript/[name]/index.bundle.js')
     },
     /********
      * 模块
@@ -135,9 +135,7 @@ let webpackBaseConfig = {
                 test: /\.(png|jpeg|jpg|gif)$/, // (png|jpe?g|gif)
                 exclude: /node_modules/,
                 // loader: 'url?limit=4096&name=images/[path]/[name].[ext]&context=' + config.client
-                loaders: process.env.NODE_ENV === 'development' ? 
-                    ['url?limit=4096&name=images/[path][name].[ext]&context=' + config.client] : 
-                    ['url?limit=4096&name=images/[path][name].[ext]&context=' + config.client, 
+                loaders: ['url?limit=4096&name=images/[path][name].[ext]&context=' + config.client, 
                     'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}']
             }
         ]

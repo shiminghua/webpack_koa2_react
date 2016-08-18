@@ -22,7 +22,7 @@ for (let key in pathsHtml) {
             template: pathsHtml[key], // 模板文件路径，支持加载器，比如 html!./index.html
             chunks: htmlChunks.concat(key), // 允许只添加某些块 (比如，仅仅 unit test 块)
             // 目标文件
-            filename: pathsHtml[key], // 输出的 HTML 文件名，默认是 index.html, 也可以直接配置带有子目录。
+            filename: pathsHtml[key].replace('client', 'build'), // 输出的 HTML 文件名，默认是 index.html, 也可以直接配置带有子目录。
             minify: {    //压缩HTML文件
                 removeComments: false,    //移除HTML中的注释
                 collapseWhitespace: false    //删除空白符与换行符

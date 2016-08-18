@@ -16,6 +16,7 @@
     --display-modules 默认情况下 node_modules 下的模块会被隐藏，加上这个参数可以显示这些被隐藏的模块
 
     webpack --watch --colors --progress --display-error-details
+    webpack --colors --progress --display-error-details --display-modules
 
 
 # externals  外部资源，引入第三方库
