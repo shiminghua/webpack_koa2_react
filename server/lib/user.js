@@ -1,4 +1,4 @@
-import { User } from '../models/index';
+import User from '../models/user';
 
 class UserController {
     constructor() {
@@ -16,14 +16,14 @@ class UserController {
      * 通过ID获取用户
      */
     getUserById(id) {
-        return User.findById(id).exec();
+        return User.findById(id);
     }
 
     /***
      * 通过name获取用户
      */
     getUserByName(name) {
-        return User.findOne({name: name}).exec();
+        return User.findOne({name: name});
     }
 
 }

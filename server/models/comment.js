@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 let Schema = mongoose.Schema;
-let ObjectId = Schema.ObjectId;
+let ObjectId = Schema.Types.ObjectId;
 
 let CommentSchema = new Schema({
     topic_id: { type: ObjectId, required: true },

@@ -88,12 +88,11 @@ app.use(views(config.server.path + 'views', {
     extension: 'ejs'
 }));
 
-// app.use(async (ctx, next) => {
-//     ctx.state = {
-//         name: 'aaa'
-//     };
-//     await next();
-// });
+app.use(async (ctx, next) => {
+    let user = ctx.session.user;
+    ctx.state.user = user;
+    await next();
+});
 
 /*********
  * 网站路由
