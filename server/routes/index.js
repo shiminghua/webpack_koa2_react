@@ -1,17 +1,9 @@
-const router = require('koa-router')();
+import koaRouter from 'koa-router';
+import IndexController from '../controllers/index';
+let router = koaRouter();
+let indexController = new IndexController();
 
-router.get('/', async function (ctx, next) {
-    ctx.state = {
-        title: 'koa2 title 666'
-    };
-    await ctx.render('index', {  });
-});
-
-router.get('/js', async function (ctx, next) {
-    ctx.state = {
-        title: 'koa2 title js'
-    };
-    await ctx.render('index', {  });
-});
+router.get('/', indexController.index);
 
 module.exports = router;
+// export default router;

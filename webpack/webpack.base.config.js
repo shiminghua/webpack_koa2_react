@@ -1,12 +1,15 @@
 'use strict';
 const webpack = require('webpack');
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin'); 
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const config = require('./config');
+const copy = require('./copy');
 const entry = require('./entry');
 const htmlPlugin = require('./htmlPlugin');
 
 // NODE_ENV
-const NODE_ENV = process.env.NODE_ENV === 'production' ? 'production' : 'development';
+const NODE_ENV = process.env.NODE_ENV;
 
 // 设置 webpack.optimize.CommonsChunkPlugin 公共模块抽取时的 name 值
 function getCommonsChunkNames() {
@@ -23,6 +26,8 @@ function getCommonsChunkNames() {
  * 插件设置
  */
 let pluginsArr = [
+    // copy
+    // new CopyWebpackPlugin(copy),
     // 设置开发模式
     new webpack.DefinePlugin({
         "process.env": {
@@ -36,6 +41,8 @@ let pluginsArr = [
         name: getCommonsChunkNames(), // 在这些模块中抽取公共模块；name值为 entry 入口文件的 key 值的数组
         filename: 'javascript/commons/[name].min.js'
     }),
+    // 单独打包css文件
+    new ExtractTextPlugin("style/resources/[name]/index.bundle.css"),
     // 优化计数模块
     new webpack.optimize.OccurenceOrderPlugin(),
     // 报错不退出
@@ -46,6 +53,7 @@ let pluginsArr = [
  * webpack 基本配置
  */
 let webpackBaseConfig = {
+    // devtool: 'eval',
     /****
      * 入口文件设置
      */
@@ -59,7 +67,7 @@ let webpackBaseConfig = {
         // 文件路径
         path: config.build,
         // 用来配置生成的文件名, 比如 [hash] 用于生成 Hash, [name] 是入口文件 entry 的 key 值
-        filename: path.normalize('javascript/[name]/index.bundle.js')
+        filename: 'javascript/[name]/index.bundle.js'
     },
     /********
      * 模块
@@ -88,8 +96,6 @@ let webpackBaseConfig = {
             {
                 test: /\.js$/,
                 exclude: /(node_modules|jquery|mui)/,  // 必须，否则报错：Uncaught ReferenceError: webpackJsonp is not defined
-                // include: /resources/,
-                // loader: 'react-hot!babel?presets[]=react,presets[]=es2015,presets[]=stage-0'
                 loaders: [
                     'react-hot',
                     'babel?presets[]=react,presets[]=es2015,presets[]=stage-0'
@@ -98,25 +104,27 @@ let webpackBaseConfig = {
             // css 加载
             {
                 test: /\.css$/,
-                exclude: /node_modules/,
+                // exclude: /node_modules/,
                 // include: /^client\/*/,
-                loaders: [
-                    'file?name=style/[name]/[name]-.min.css',
-                    'extract',
-                    'css'
-                ]
+                loader: ExtractTextPlugin.extract("style", "css")
+                // loaders: [
+                //     'file?name=style/[path][name].min.css',
+                //     'extract',
+                //     'css'
+                // ]
             },
             // less 加载
             {
                 test: /\.less$/,
-                exclude: /node_modules/,
+                // exclude: /node_modules/,
                 // include: /^client\/*/,
-                loaders: [
-                    'file?name=style/[path][name]/index.min.css&context=' + path.join(config.client, 'resources/'),
-                    'extract',
-                    'css',
-                    'less'
-                ]
+                loader: ExtractTextPlugin.extract("style", "css!less")
+                // loaders: [
+                //     'file?name=style/[path][name].min.css&context=' + path.join(config.client, 'resources/'),
+                //     'extract',
+                //     'css',
+                //     'less'
+                // ]
             },
             // html 加载
             {
@@ -141,13 +149,12 @@ let webpackBaseConfig = {
         ]
     },
     /*********************
-     * 外部资源，引入第三方库
+     * 外部资源，引入第三方库，不会被打包
     */
-    // externals: {
-    //     "react": 'window.React',
-    //     'react-dom': 'window.ReactDOM',
-    //     "jquery": 'window.jQuery'
-    // },
+    externals: {
+        // "react": 'react',
+        // 'react-dom': 'react-dom'
+    },
     /********************
      * 其它解决方案配置
     */
@@ -170,5 +177,7 @@ let webpackBaseConfig = {
     */
     plugins: pluginsArr.concat(htmlPlugin)
 };
-console.log(webpackBaseConfig);
+
+// console.log(webpackBaseConfig);
+
 module.exports = webpackBaseConfig;

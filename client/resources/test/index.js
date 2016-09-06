@@ -1,8 +1,10 @@
-'use strict';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MyForm from './views/MyForm.react';
+import Hello from './views/hello.react';
+
+require('./css/test');
+require('./css/hello');
 
 ReactDOM.render(
-    <MyForm />, document.getElementById('content')
+    <Hello name='minghua' />, document.getElementById('content')
 );

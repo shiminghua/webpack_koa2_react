@@ -13,6 +13,7 @@ function getEntry () {
     let objPaths = filePaths.getPaths(config.js, path.join(config.client, '/resources/'));
     // 遍历数组设置entry属性
     for (let key in objPaths) {
+        // console.log(key.replace('\\', '/'))
         entry[key] = [objPaths[key]];
     }
 
