@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from '../lib/ModelMongodb';
 
 let Schema = mongoose.Schema;
 let ObjectId = Schema.Types.ObjectId;
@@ -18,4 +18,26 @@ CommentSchema.index({topic_id: 1, updated_at: 1});
 
 let Comment = mongoose.model('Comment', CommentSchema);
 
-export default Comment;
+class CommentModel extends Comment {
+
+    constructor() {
+        // super();
+    }
+
+    /**
+     * 添加一条评论
+     */
+    addComment (data) {
+        return Comment.create(data);
+    }
+
+    /**
+     * 根据话题ID获取对应评论
+     */
+    getCommentsByTopicId (id) {
+        return Comment.find({topic_id: id}).sort('updated_at').exec();
+    }
+
+};
+
+export default CommentModel;

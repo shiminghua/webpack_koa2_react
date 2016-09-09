@@ -1,5 +1,6 @@
 import koaRouter from 'koa-router';
 import User from '../controllers/user';
+import UserValidator from '../validator/author';
 
 let router = new koaRouter({
     prefix: '/author'
@@ -15,7 +16,7 @@ router.get('/logout', user.logout);
 // 登录页面
 router.get('/signin', user.getSignin);
 // 登录
-router.post('/signin', user.postSignin);
+router.post('/signin', UserValidator.validatePostSignin, user.postSignin);
 
 module.exports = router;
 // export default router;

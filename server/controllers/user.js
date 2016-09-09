@@ -1,5 +1,9 @@
-import Models from '../lib/core';
-let $User = new Models.$User();
+/**
+ * 用户 - 登录、注册
+ */
+import UserModel from '../models/user';
+
+let $User = new UserModel();
 
 class Signup {
 
@@ -57,7 +61,7 @@ class Signup {
         let userInfo = await $User.getUserByName(data.name);
         if (!userInfo || (userInfo.password !== data.password)) {
             ctx.body = {
-                error: 1002,
+                code: 1002,
                 msg: '用户名或密码错误'
             };
             return;
@@ -66,10 +70,11 @@ class Signup {
             name: userInfo.name,
             email: userInfo.email
         };
-        ctx.body = {
-            error: 200,
-            msg: '登录成功'
-        };
+        // ctx.body = {
+        //     error: 200,
+        //     msg: '登录成功'
+        // };
+        ctx.redirect('/');
     }
 
 }

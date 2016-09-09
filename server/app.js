@@ -16,13 +16,15 @@ import redisStore from 'koa-redis';
 import flash from 'koa-flash';
 import routerCache from 'koa-router-cache';
 import gzip from 'koa-gzip';
+import validate from 'koa-validate';
+
+import setUser from './middlewares/session.user'; // 设置用户信息，判定用户是否登录等
 
 const app = new koa();
 app.keys = config.keys;
 
 import config from './config/config'; // 配置文件
 import schemeConfig from './scheme/scheme'; // 验证配置文件 
-// import Store from './config/Store';
 
 /***********
  * 错误处理中间件，放在所有中间件之前
@@ -56,19 +58,6 @@ app.use(convert(
 // }));
 app.use(convert(flash())); // flash 基于session实现，需要放在session之后
 
-/*******************
- * mongodb 
-*/
-// const mongoose = require('mongoose'); // mongodb
-// mongoose.connect(config.db.mongodb, {
-//     server: { poolSize: 20 }
-// }, err => {
-//     if (err) {
-//         process.exit(1);
-//     }
-// });
-
-
 /********************* 
  * middlewares 
 */
@@ -87,15 +76,18 @@ app.use(convert(koaStatic(path.join(__dirname, '/public'))));
 app.use(views(config.server.path + 'views', {
     extension: 'ejs'
 }));
+/**
+ * 验证
+ */
+validate(app);
 
-app.use(async (ctx, next) => {
-    let user = ctx.session.user;
-    ctx.state.user = user;
-    await next();
-});
+/**
+ * 自定义中间件 - 设置用户信息
+ */
+app.use(setUser());
 
 /*********
- * 网站路由
+ * 路由
  */
 import initRoutes from './routes/router';
 initRoutes(app);

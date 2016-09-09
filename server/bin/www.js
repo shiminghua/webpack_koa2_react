@@ -7,6 +7,7 @@ require('babel-core/register');
 require('babel-polyfill');
 
 const app = require('../app');
+// import app from '../app';
 const debug = require('debug')('demo:server');
 const http = require('http');
 const config = require('../config/config');

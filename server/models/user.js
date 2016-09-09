@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from '../lib/ModelMongodb';
 const Schema = mongoose.Schema;
 
 let UserSchema = new Schema({
@@ -15,4 +15,37 @@ UserSchema.index({ name: 1 });
 
 let User = mongoose.model('User', UserSchema);
 
-export default User;
+class UserModel extends User {
+    constructor() {
+        super();
+    }
+
+    /*****
+     * 新建一个用户
+     */
+    addUser(data) {
+        return User.create(data);
+    }
+
+    /***
+     * 通过ID获取用户
+     */
+    getUserById(id) {
+        return User.findById(id).exec();
+    }
+
+    /***
+     * 通过name获取用户
+     */
+    async getUserByName(name) {
+
+        // let query = User.findOne({name: name});
+        // let promise = query.exec();
+        // return promise;
+        return User.findOne({ name: name }).exec();
+
+    }
+
+}
+
+export default UserModel;

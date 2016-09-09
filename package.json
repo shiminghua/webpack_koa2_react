@@ -72,6 +72,7 @@
     "webpack-hot-middleware": "^2.12.2"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "co-cache": "^2.2.0",
     "config-lite": "^1.5.0",
     "crypto": "0.0.3",
