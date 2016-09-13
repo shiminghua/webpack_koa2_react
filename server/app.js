@@ -45,7 +45,15 @@ app.use(json());
 app.use(convert(
     session({
         key: "SESSIONID",
+        ttl: 3600 * 1000,
         store: redisStore(config.db.redis),
+        cookie: {
+            path: '/',
+            httpOnly: true,
+            maxage: 3600 * 1000,
+            rewrite: true,
+            signed: true
+        },
         expires: 24 * 3600 * 1000,
         maxAge: 3600 * 1000
     })

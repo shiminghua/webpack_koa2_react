@@ -23,7 +23,7 @@ let Topic = mongoose.model('Topic', TopicSchema);
 class TopicModel extends Topic {
 
     constructor() {
-        // super();
+        super();
     }
 
     /***
@@ -68,7 +68,7 @@ class TopicModel extends Topic {
     /**
      * 获取5条最新未评论的话题
      */
-    getNoReplayTopics () {
+    getNoReplyTopics () {
         return Topic.find({comment: 0}).sort('-updated_at').limit(5).select('title').exec();
     }
 

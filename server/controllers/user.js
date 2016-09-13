@@ -66,10 +66,7 @@ class Signup {
             };
             return;
         }
-        ctx.session.user = {
-            name: userInfo.name,
-            email: userInfo.email
-        };
+        ctx.session.user = userInfo;
         // ctx.body = {
         //     error: 200,
         //     msg: '登录成功'
