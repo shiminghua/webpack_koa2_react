@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-'use strict';
 /********
  * 依赖模块
  */

@@ -1,6 +1,6 @@
 <div class="ui top attached tabular menu">
-  <a href="/" class="item <%= (!$this.query.tab || ($this.query.tab == $app.tabs[0])) ? 'active' : '' %>"><%= $app.tabs[0] %></a>
-  <% $app.tabs.slice(1).forEach(function (tab) { %>
-    <a href="/?tab=<%= tab %>" class="item <%= ($this.query.tab == tab) ? 'active' : '' %>"><%= tab %></a>
+  <a href="/" class="item <%= (!tab || (tab == tabs[0])) ? 'active' : '' %>"><%= tabs[0] %></a>
+  <% tabs.slice(1).forEach(function (mytab) { %>
+    <a href="/?tab=<%= mytab %>" class="item <%= (tab == mytab) ? 'active' : '' %>"><%= mytab %></a>
   <% }) %>
 </div>

@@ -1,11 +1,14 @@
 /**
  * 用户 - 登录、注册
  */
+import Controller from '../lib/controller';
 import UserModel from '../models/user';
+import TopicModel from '../models/topic';
 
 let $User = new UserModel();
+let topicModel = new TopicModel(); 
 
-class Signup {
+class Signup extends Controller {
 
     /**
      * 获取注册页面
@@ -60,10 +63,11 @@ class Signup {
         let data = ctx.request.body;
         let userInfo = await $User.getUserByName(data.name);
         if (!userInfo || (userInfo.password !== data.password)) {
-            ctx.body = {
-                code: 1002,
-                msg: '用户名或密码错误'
-            };
+            ctx.body = super.formatError(1002, '用户名或密码错误');
+            // {
+            //     code: 1002,
+            //     msg: '用户名或密码错误'
+            // }
             return;
         }
         ctx.session.user = userInfo;
@@ -72,6 +76,25 @@ class Signup {
         //     msg: '登录成功'
         // };
         ctx.redirect('/');
+    }
+
+    /**
+     * 用户主页
+     */
+    async userIndex(ctx) {
+        // 获取未回复的话题
+        let noReplyTopics = await topicModel.getNoReplyTopics();
+
+        let name = ctx.params.name;
+        let topics = await topicModel.getTopicsByName(name);
+
+        let tab = ctx.query.tab;
+
+        await ctx.render('user', {
+            noReplyTopics,
+            topics,
+            tab: tab
+        });
     }
 
 }

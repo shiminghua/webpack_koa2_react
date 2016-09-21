@@ -1,3 +1,6 @@
+/**
+ * SESSION配置文件，暂时无用
+ */
 import Redis from 'ioredis';
 import { Store } from 'koa-session2';
 import config from './config';

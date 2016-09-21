@@ -1,14 +1,19 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <%for(var i = 0; i < users.length; i++){%>
-      <h1><%= users[i].name %></h1>
-      <p><%= users[i].password%></p>
-      <p><%= users[i].create_at%></p>
-    <%}%>
-  </body>
-</html>
+<% include common/header %>
+
+<div class="container">
+  <div class="ui two column centered grid">
+    <div class="right floated left aligned four wide column">
+      <% include topic/userCard %>
+      <% if (user) { %>
+        <% include topic/createCard %>
+      <% } %>
+      <% include topic/noReplyCard %>
+      <% include topic/linkCard %>
+    </div>
+    <div class="left floated twelve wide column">
+      <% include topic/list %>
+    </div>
+  </div>
+</div>
+
+<% include common/footer %>

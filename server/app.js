@@ -18,6 +18,7 @@ import routerCache from 'koa-router-cache';
 import gzip from 'koa-gzip';
 import validate from 'koa-validate';
 
+import setLocals from './middlewares/locals'; // 设置公用参数
 import setUser from './middlewares/session.user'; // 设置用户信息，判定用户是否登录等
 
 const app = new koa();
@@ -90,8 +91,11 @@ app.use(views(config.server.path + 'views', {
 validate(app);
 
 /**
- * 自定义中间件 - 设置用户信息
+ * 自定义中间件
  */
+// locals
+app.use(setLocals(config.locals));
+// user - session
 app.use(setUser());
 
 /*********

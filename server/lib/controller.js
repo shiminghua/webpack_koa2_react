@@ -8,13 +8,15 @@ class Controller {
   }
 
   /**
-   * 初始化返回成功数据
+   * 格式化成功数据
+   * @params obj data
+   * @return obj
    */
-  formatData(data) {
+  formatData(data = null) {
     return {
       code: 200,
       msg: '请求成功！',
-      data: data || []
+      data: data
     };
   }
 
@@ -24,8 +26,7 @@ class Controller {
   formatError(code, msg) {
     return {
       code: code || 400,
-      msg: msg || '请求错误！',
-      data: null
+      msg: msg || '请求错误！'
     };
   }
 

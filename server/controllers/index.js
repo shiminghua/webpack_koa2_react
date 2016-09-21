@@ -1,19 +1,35 @@
 import TopicModel from '../models/topic';
+import Controller from '../lib/controller';
+import ErrorCode from '../config/ErrorCode';
 
 let topicModel = new TopicModel();
 /**
  * 首页 
  */
 
-class Index {
+class Index extends Controller {
 
-    constructor(props) {
-
+    constructor() {
+        super();
     }
 
     async index(ctx) {
+        // console.log('process----->', process);
+        // 获取未回复的话题
         let noReplyTopics = await topicModel.getNoReplyTopics();
-        await ctx.render('index', { noReplyTopics });
+        // 获取tabs
+        let tab = ctx.query.tab;
+        let p = ctx.query.p || 1;
+        let topics = await topicModel.getTopicsByTab(tab, p);
+
+        let count = await topicModel.getTopicsCount(tab);
+        await ctx.render('index', { 
+            noReplyTopics, 
+            topics, 
+            tab: tab, 
+            count: count,
+            p: p
+        });
     }
 
     /**
@@ -21,11 +37,7 @@ class Index {
      */
     async getNoReplyTopics (ctx) {
         let topics = await topicModel.getNoReplyTopics();
-        ctx.body = {
-            code: 200,
-            msg: '请求成功',
-            data: topics
-        };
+        ctx.body = super.formatData(topics);
     }
     
 };

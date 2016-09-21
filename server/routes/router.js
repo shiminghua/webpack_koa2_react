@@ -7,7 +7,9 @@ const router = koaRouter();
 const arrRouters = [
     './index', // 首页路由
     './test', // 测试页路由
-    './author',
+    './author', // 登录注册
+    './user', // 用户中心
+    './topic', // 话题
 ];
 
 /*********

@@ -3,7 +3,25 @@ import path from 'path';
 import configCacheRouter from './cache.router';
 
 const config = {
+    /**
+     * app.keys
+     */
     keys: ['koa2_react'],
+    /**
+     * render locals
+     */
+    locals: {
+        "name": "Node.js-club",
+        "version": "0.0.1",
+        "description": "一个分享与发现的地方",
+        "locale": "zh-cn",
+        "tabs": ["全部", "问答", "分享", "吐槽", "招聘"],
+        "dependencies": {
+            "gravatar": "1.1.0",
+            "moment": "2.9.0",
+            "markdown-it": "4.0.3"
+        }
+    },
     /***
      * 服务器配置
      */
