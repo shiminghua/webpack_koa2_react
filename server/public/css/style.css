@@ -12,3 +12,6 @@ body{background-color:#f9f9f7;padding-top:100px}
 .ui.pagination{margin-top:10px!important}
 .ui.comments{max-width:100%;font-size:16px}
 .ui.menu .item:before{width:0}
+.content {
+  word-break: break-all;
+}

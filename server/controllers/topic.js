@@ -5,8 +5,10 @@ import TopicModel from '../models/topic';
 import Controller from '../lib/controller';
 import ErrorCode from '../config/ErrorCode';
 import { formatData } from '../helpers/help';
+import CommentModel from '../models/comment';
 
 let topicModel = new TopicModel();
+let commentModel = new CommentModel();
 /**
  * 首页 
  */
@@ -46,13 +48,30 @@ class Topic extends Controller {
 
     // 话题详情页
     async getInfo(ctx) {
-      await ctx.render('index', { 
+      // 获取话题详情
+      let id = ctx.params.id;
+      let topic = await topicModel.getTopicById(id);
+      // 获取未回复的话题
+      let noReplyTopics = await topicModel.getNoReplyTopics();
+      // 获取话题的评论
+      let comments = await commentModel.getCommentsByTopicId(id);
+
+      await ctx.render('topic/topic', { 
           noReplyTopics, 
-          topics, 
-          tab: tab, 
-          count: count,
-          p: p
+          topic,
+          comments
       });
+    }
+
+    // 提交评论
+    async addComment(ctx) {
+      let data = ctx.request.body;
+      data.user = ctx.session.user;
+
+      await commentModel.addComment(data);
+      await topicModel.incCommentById(data.topic_id);
+
+      ctx.redirect('back');
     }
     
 };

@@ -1,3 +1,6 @@
+/**
+ * 连接mongodb数据库
+ */
 import mongoose from 'mongoose';
 import config from '../config/config';
 

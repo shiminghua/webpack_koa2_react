@@ -21,7 +21,7 @@ let Comment = mongoose.model('Comment', CommentSchema);
 class CommentModel extends Comment {
 
     constructor() {
-        // super();
+        super();
     }
 
     /**
