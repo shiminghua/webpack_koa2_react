@@ -28,7 +28,8 @@ function getKey(jspath, delPath) {
     let resultPath = winPath.replace(delPath, '');
     // 获取key值
     let key = path.dirname(resultPath);
-    return key;
+    
+    return key.replace('\\', '/');
 }
 
 module.exports = {

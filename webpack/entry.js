@@ -14,6 +14,7 @@ function getEntry () {
     // 遍历数组设置entry属性
     for (let key in objPaths) {
         // console.log(key.replace('\\', '/'))
+        // let tempKey = key.replace('\\', '/');
         entry[key] = [objPaths[key]];
     }
 

@@ -178,6 +178,6 @@ let webpackBaseConfig = {
     plugins: pluginsArr.concat(htmlPlugin)
 };
 
-// console.log(webpackBaseConfig);
+console.log(webpackBaseConfig);
 
 module.exports = webpackBaseConfig;

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>redux-test</title>
+    <!--<script src="//cdn.bootcss.com/redux/3.6.0/redux.js"></script>-->
+    <script src="../../../node_modules/redux/dist/redux.js"></script>
+  </head>
+  <body>
+    <script>
+      /**Action creators */
+      function inc() {
+        return { type: 'INCREMENT' };
+      }
+      function dec() {
+        return { type: 'DECREMENT' };
+      }
+
+      function reducer(state, action) {
+        // 首次调用函数时初始化state
+        state = state || { counter: 0 };
+
+        switch(action.type) {
+          case 'INCREMENT':
+            return { counter: state.counter + 1 };
+            // break;
+          case 'DECREMENT':
+            return { counter: state.counter - 1 };
+            // break;
+          default :
+            return state;
+            // break;
+        }
+      }
+
+      var store = Redux.createStore(reducer);
+
+      console.log(store.getState());
+
+      store.dispatch(inc());
+      console.log(store.getState());
+
+      store.dispatch(inc());
+      console.log(store.getState());
+
+      store.dispatch(dec());
+      console.log(store.getState());
+
+    </script>
+  </body>
+</html>

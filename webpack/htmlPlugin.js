@@ -13,8 +13,9 @@ let htmlChunks = [];
 for (let key in ConfigureCommonChunks) {
     htmlChunks.push(key);
 }
-
+console.log('------------>', pathsHtml);
 for (let key in pathsHtml) {
+    console.log(htmlChunks.concat(key));
     htmlPlugin.push(
         new HtmlWebpackPlugin({
             hash: true, // 如果为 true, 将添加一个唯一的 webpack 编译 hash 到所有包含的脚本和 CSS 文件，对于解除 cache 很有用。
