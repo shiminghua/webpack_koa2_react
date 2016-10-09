@@ -1,19 +1,28 @@
-webpackJsonp([2],{
-
-/***/ 0:
+webpackJsonp([3],[
+/* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(51);
+	module.exports = __webpack_require__(62);
 
 
 /***/ },
-
-/***/ 20:
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getPrototype = __webpack_require__(42),
-	    isHostObject = __webpack_require__(43),
-	    isObjectLike = __webpack_require__(45);
+	var getPrototype = __webpack_require__(27),
+	    isHostObject = __webpack_require__(28),
+	    isObjectLike = __webpack_require__(30);
 
 	/** `Object#toString` result references. */
 	var objectTag = '[object Object]';
@@ -84,8 +93,8 @@ webpackJsonp([2],{
 
 
 /***/ },
-
-/***/ 23:
+/* 13 */,
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -93,27 +102,27 @@ webpackJsonp([2],{
 	exports.__esModule = true;
 	exports.compose = exports.applyMiddleware = exports.bindActionCreators = exports.combineReducers = exports.createStore = undefined;
 
-	var _createStore = __webpack_require__(31);
+	var _createStore = __webpack_require__(21);
 
 	var _createStore2 = _interopRequireDefault(_createStore);
 
-	var _combineReducers = __webpack_require__(77);
+	var _combineReducers = __webpack_require__(42);
 
 	var _combineReducers2 = _interopRequireDefault(_combineReducers);
 
-	var _bindActionCreators = __webpack_require__(76);
+	var _bindActionCreators = __webpack_require__(41);
 
 	var _bindActionCreators2 = _interopRequireDefault(_bindActionCreators);
 
-	var _applyMiddleware = __webpack_require__(75);
+	var _applyMiddleware = __webpack_require__(40);
 
 	var _applyMiddleware2 = _interopRequireDefault(_applyMiddleware);
 
-	var _compose = __webpack_require__(30);
+	var _compose = __webpack_require__(20);
 
 	var _compose2 = _interopRequireDefault(_compose);
 
-	var _warning = __webpack_require__(32);
+	var _warning = __webpack_require__(22);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -136,8 +145,12 @@ webpackJsonp([2],{
 	exports.compose = _compose2['default'];
 
 /***/ },
-
-/***/ 30:
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -180,8 +193,7 @@ webpackJsonp([2],{
 	}
 
 /***/ },
-
-/***/ 31:
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -190,11 +202,11 @@ webpackJsonp([2],{
 	exports.ActionTypes = undefined;
 	exports['default'] = createStore;
 
-	var _isPlainObject = __webpack_require__(20);
+	var _isPlainObject = __webpack_require__(12);
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _symbolObservable = __webpack_require__(78);
+	var _symbolObservable = __webpack_require__(43);
 
 	var _symbolObservable2 = _interopRequireDefault(_symbolObservable);
 
@@ -447,8 +459,7 @@ webpackJsonp([2],{
 	}
 
 /***/ },
-
-/***/ 32:
+/* 22 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -478,74 +489,14 @@ webpackJsonp([2],{
 	}
 
 /***/ },
-
-/***/ 33:
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.increment = increment;
-	exports.decrement = decrement;
-	exports.incrementIfOdd = incrementIfOdd;
-	exports.incrementAsync = incrementAsync;
-	/**
-	 * counter actions
-	 */
-	var INCREMENT_COUNTER = exports.INCREMENT_COUNTER = 'INCREMENT_COUNTER';
-	var DECREMENT_COUNTER = exports.DECREMENT_COUNTER = 'DECREMENT_COUNTER';
-
-	// 导出加一的方法
-	function increment() {
-	  return {
-	    type: INCREMENT_COUNTER
-	  };
-	}
-
-	// 导出减一的方法
-	function decrement() {
-	  return {
-	    type: DECREMENT_COUNTER
-	  };
-	}
-
-	//导出奇数加一的方法，该方法返回一个方法，包含dispatch和getState两个参数，dispatch用于执行action的方法，getState返回state
-	function incrementIfOdd() {
-	  return function (dispatch, getState) {
-	    var _getState = getState();
-
-	    var counter = _getState.counter;
-
-	    if (counter % 2 === 0) {
-	      return;
-	    }
-	    dispatch(increment());
-	  };
-	}
-
-	//导出一个方法,包含一个默认参数delay,返回一个方法,一秒后加一
-	function incrementAsync() {
-	  var delay = arguments.length <= 0 || arguments[0] === undefined ? 1000 : arguments[0];
-
-	  return function (dispatch) {
-	    setTimeout(function () {
-	      dispatch(increment());
-	    }, delay);
-	  };
-	}
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "counter.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-
-/***/ 42:
-/***/ function(module, exports, __webpack_require__) {
-
-	var overArg = __webpack_require__(44);
+	var overArg = __webpack_require__(29);
 
 	/** Built-in value references. */
 	var getPrototype = overArg(Object.getPrototypeOf, Object);
@@ -554,8 +505,7 @@ webpackJsonp([2],{
 
 
 /***/ },
-
-/***/ 43:
+/* 28 */
 /***/ function(module, exports) {
 
 	/**
@@ -581,8 +531,7 @@ webpackJsonp([2],{
 
 
 /***/ },
-
-/***/ 44:
+/* 29 */
 /***/ function(module, exports) {
 
 	/**
@@ -603,8 +552,7 @@ webpackJsonp([2],{
 
 
 /***/ },
-
-/***/ 45:
+/* 30 */
 /***/ function(module, exports) {
 
 	/**
@@ -639,73 +587,16 @@ webpackJsonp([2],{
 
 
 /***/ },
-
-/***/ 50:
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = counter;
-
-	var _counter = __webpack_require__(33);
-
-	// reducer其实也是个方法而已，参数是state和action，返回值是新的state
-	function counter() {
-	  var state = arguments.length <= 0 || arguments[0] === undefined ? 0 : arguments[0];
-	  var action = arguments[1];
-
-	  switch (action.type) {
-	    case _counter.DECREMENT_COUNTER:
-	      return state + 1;
-	    case _counter.DECREMENT_COUNTER:
-	      return state - 1;
-	    default:
-	      return state;
-	  }
-	} /**
-	   * counter
-	   */
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "counter.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-
-/***/ 51:
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _redux = __webpack_require__(23);
-
-	var _counter = __webpack_require__(50);
-
-	var _counter2 = _interopRequireDefault(_counter);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	//使用redux的combineReducers方法将所有reducer打包起来
-	var rootReducer = (0, _redux.combineReducers)({
-	  counter: _counter2.default
-	});
-
-	exports.default = rootReducer;
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-
-/***/ 75:
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -716,7 +607,7 @@ webpackJsonp([2],{
 
 	exports['default'] = applyMiddleware;
 
-	var _compose = __webpack_require__(30);
+	var _compose = __webpack_require__(20);
 
 	var _compose2 = _interopRequireDefault(_compose);
 
@@ -768,8 +659,7 @@ webpackJsonp([2],{
 	}
 
 /***/ },
-
-/***/ 76:
+/* 41 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -825,8 +715,7 @@ webpackJsonp([2],{
 	}
 
 /***/ },
-
-/***/ 77:
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -834,13 +723,13 @@ webpackJsonp([2],{
 	exports.__esModule = true;
 	exports['default'] = combineReducers;
 
-	var _createStore = __webpack_require__(31);
+	var _createStore = __webpack_require__(21);
 
-	var _isPlainObject = __webpack_require__(20);
+	var _isPlainObject = __webpack_require__(12);
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _warning = __webpack_require__(32);
+	var _warning = __webpack_require__(22);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -973,16 +862,14 @@ webpackJsonp([2],{
 	}
 
 /***/ },
-
-/***/ 78:
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(79);
+	module.exports = __webpack_require__(44);
 
 
 /***/ },
-
-/***/ 79:
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
@@ -991,7 +878,7 @@ webpackJsonp([2],{
 		value: true
 	});
 
-	var _ponyfill = __webpack_require__(80);
+	var _ponyfill = __webpack_require__(45);
 
 	var _ponyfill2 = _interopRequireDefault(_ponyfill);
 
@@ -1010,8 +897,7 @@ webpackJsonp([2],{
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-
-/***/ 80:
+/* 45 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1038,6 +924,144 @@ webpackJsonp([2],{
 		return result;
 	};
 
-/***/ }
+/***/ },
+/* 46 */
+/***/ function(module, exports, __webpack_require__) {
 
-});
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.increment = increment;
+	exports.decrement = decrement;
+	exports.incrementIfOdd = incrementIfOdd;
+	exports.incrementAsync = incrementAsync;
+	/**
+	 * counter actions
+	 */
+	var INCREMENT_COUNTER = exports.INCREMENT_COUNTER = 'INCREMENT_COUNTER';
+	var DECREMENT_COUNTER = exports.DECREMENT_COUNTER = 'DECREMENT_COUNTER';
+
+	// 导出加一的方法
+	function increment() {
+	  return {
+	    type: INCREMENT_COUNTER
+	  };
+	}
+
+	// 导出减一的方法
+	function decrement() {
+	  return {
+	    type: DECREMENT_COUNTER
+	  };
+	}
+
+	//导出奇数加一的方法，该方法返回一个方法，包含dispatch和getState两个参数，dispatch用于执行action的方法，getState返回state
+	function incrementIfOdd() {
+	  return function (dispatch, getState) {
+	    var _getState = getState();
+
+	    var counter = _getState.counter;
+
+	    if (counter % 2 === 0) {
+	      return;
+	    }
+	    dispatch(increment());
+	  };
+	}
+
+	//导出一个方法,包含一个默认参数delay,返回一个方法,一秒后加一
+	function incrementAsync() {
+	  var delay = arguments.length <= 0 || arguments[0] === undefined ? 1000 : arguments[0];
+
+	  return function (dispatch) {
+	    setTimeout(function () {
+	      dispatch(increment());
+	    }, delay);
+	  };
+	}
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "counter.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = counter;
+
+	var _counter = __webpack_require__(46);
+
+	// reducer其实也是个方法而已，参数是state和action，返回值是新的state
+	function counter() {
+	  var state = arguments.length <= 0 || arguments[0] === undefined ? 0 : arguments[0];
+	  var action = arguments[1];
+
+	  switch (action.type) {
+	    case _counter.INCREMENT_COUNTER:
+	      return state + 1;
+	    case _counter.DECREMENT_COUNTER:
+	      return state - 1;
+	    default:
+	      return state;
+	  }
+	} /**
+	   * counter
+	   */
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "counter.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 62 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _redux = __webpack_require__(14);
+
+	var _counter = __webpack_require__(61);
+
+	var _counter2 = _interopRequireDefault(_counter);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	//使用redux的combineReducers方法将所有reducer打包起来
+	var rootReducer = (0, _redux.combineReducers)({
+	  counter: _counter2.default
+	});
+
+	exports.default = rootReducer;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }
+]);

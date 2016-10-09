@@ -1,14 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import App from './containers/App'
+import todoApp from './reducers'
 
-class Hello extends React.Component {
-  render() {
-    return (
-      <h1>Hello {this.props.name}</h1>
-    );
-  }
-}
+let store = createStore(todoApp)
 
-ReactDOM.render(
-    <Hello name='minghua' />, document.getElementById('content')
-);
+let rootElement = document.getElementById('root')
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  rootElement
+)
