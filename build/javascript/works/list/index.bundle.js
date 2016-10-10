@@ -1,42 +1,42 @@
-webpackJsonp([5],{
+webpackJsonp([6],{
 
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(143);
+	module.exports = __webpack_require__(158);
 
 
 /***/ },
 
-/***/ 125:
+/***/ 130:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
 
-/***/ 143:
+/***/ 158:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(3);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactDom = __webpack_require__(23);
+	var _reactDom = __webpack_require__(18);
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _image = __webpack_require__(144);
+	var _image = __webpack_require__(159);
 
 	var _image2 = _interopRequireDefault(_image);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	__webpack_require__(125);
+	__webpack_require__(130);
 
 	_reactDom2.default.render(_react2.default.createElement(_image2.default, null), document.getElementById('content'));
 
@@ -44,7 +44,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 144:
+/***/ 159:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -57,7 +57,7 @@ webpackJsonp([5],{
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(3);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -92,7 +92,7 @@ webpackJsonp([5],{
 	                    null,
 	                    'my react index'
 	                ),
-	                _react2.default.createElement('img', { src: __webpack_require__(230), alt: '' })
+	                _react2.default.createElement('img', { src: __webpack_require__(245), alt: '' })
 	            );
 	        }
 	    }]);
@@ -106,7 +106,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 230:
+/***/ 245:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/resources/works/list/images/1.jpg";

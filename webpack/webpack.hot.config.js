@@ -33,5 +33,5 @@ webpackHotConfig.devServer = {
     historyApiFallback: true
 };
 
-console.log('\r\n----------------------\r\n', webpackHotConfig);
+console.log('---------->热替换配置文件：\r\n', webpackHotConfig);
 module.exports = webpackHotConfig;

@@ -21,7 +21,7 @@ function getCommonsChunkNames() {
     }
     return commonChunkNames;
 }
-
+console.log('---------->公共模块：\r\n', getCommonsChunkNames());
 /*******
  * 插件设置
  */
@@ -178,6 +178,6 @@ let webpackBaseConfig = {
     plugins: pluginsArr.concat(htmlPlugin)
 };
 
-console.log(webpackBaseConfig);
+console.log('---------->基本配置文件：\r\n', webpackBaseConfig);
 
 module.exports = webpackBaseConfig;

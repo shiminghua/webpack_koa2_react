@@ -27,5 +27,5 @@ function getEntry () {
 }
 
 entry = getEntry();
-
+console.log('---------->入口文件：\r\n', entry);
 module.exports = entry;

@@ -3,7 +3,7 @@ webpackJsonp([1],{
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(137);
+	module.exports = __webpack_require__(152);
 
 
 /***/ },
@@ -93,27 +93,27 @@ webpackJsonp([1],{
 	exports.__esModule = true;
 	exports.compose = exports.applyMiddleware = exports.bindActionCreators = exports.combineReducers = exports.createStore = undefined;
 
-	var _createStore = __webpack_require__(21);
+	var _createStore = __webpack_require__(22);
 
 	var _createStore2 = _interopRequireDefault(_createStore);
 
-	var _combineReducers = __webpack_require__(42);
+	var _combineReducers = __webpack_require__(43);
 
 	var _combineReducers2 = _interopRequireDefault(_combineReducers);
 
-	var _bindActionCreators = __webpack_require__(41);
+	var _bindActionCreators = __webpack_require__(42);
 
 	var _bindActionCreators2 = _interopRequireDefault(_bindActionCreators);
 
-	var _applyMiddleware = __webpack_require__(40);
+	var _applyMiddleware = __webpack_require__(41);
 
 	var _applyMiddleware2 = _interopRequireDefault(_applyMiddleware);
 
-	var _compose = __webpack_require__(20);
+	var _compose = __webpack_require__(21);
 
 	var _compose2 = _interopRequireDefault(_compose);
 
-	var _warning = __webpack_require__(22);
+	var _warning = __webpack_require__(23);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -137,7 +137,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 20:
+/***/ 21:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -181,7 +181,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 21:
+/***/ 22:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -194,7 +194,7 @@ webpackJsonp([1],{
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _symbolObservable = __webpack_require__(43);
+	var _symbolObservable = __webpack_require__(44);
 
 	var _symbolObservable2 = _interopRequireDefault(_symbolObservable);
 
@@ -448,7 +448,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 22:
+/***/ 23:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -577,7 +577,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 31:
+/***/ 32:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -585,11 +585,11 @@ webpackJsonp([1],{
 	exports.__esModule = true;
 	exports.connect = exports.Provider = undefined;
 
-	var _Provider = __webpack_require__(63);
+	var _Provider = __webpack_require__(64);
 
 	var _Provider2 = _interopRequireDefault(_Provider);
 
-	var _connect = __webpack_require__(64);
+	var _connect = __webpack_require__(65);
 
 	var _connect2 = _interopRequireDefault(_connect);
 
@@ -600,14 +600,14 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 32:
+/***/ 33:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(3);
 
 	exports["default"] = _react.PropTypes.shape({
 	  subscribe: _react.PropTypes.func.isRequired,
@@ -617,7 +617,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 33:
+/***/ 34:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -647,7 +647,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 40:
+/***/ 41:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -658,7 +658,7 @@ webpackJsonp([1],{
 
 	exports['default'] = applyMiddleware;
 
-	var _compose = __webpack_require__(20);
+	var _compose = __webpack_require__(21);
 
 	var _compose2 = _interopRequireDefault(_compose);
 
@@ -711,7 +711,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 41:
+/***/ 42:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -768,7 +768,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 42:
+/***/ 43:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -776,13 +776,13 @@ webpackJsonp([1],{
 	exports.__esModule = true;
 	exports['default'] = combineReducers;
 
-	var _createStore = __webpack_require__(21);
+	var _createStore = __webpack_require__(22);
 
 	var _isPlainObject = __webpack_require__(12);
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _warning = __webpack_require__(22);
+	var _warning = __webpack_require__(23);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -916,15 +916,15 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 43:
+/***/ 44:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(44);
+	module.exports = __webpack_require__(45);
 
 
 /***/ },
 
-/***/ 44:
+/***/ 45:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
@@ -933,7 +933,7 @@ webpackJsonp([1],{
 		value: true
 	});
 
-	var _ponyfill = __webpack_require__(45);
+	var _ponyfill = __webpack_require__(46);
 
 	var _ponyfill2 = _interopRequireDefault(_ponyfill);
 
@@ -953,7 +953,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 45:
+/***/ 46:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -982,7 +982,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 55:
+/***/ 56:
 /***/ function(module, exports) {
 
 	/**
@@ -1039,7 +1039,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 56:
+/***/ 57:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -1097,7 +1097,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 63:
+/***/ 64:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1105,13 +1105,13 @@ webpackJsonp([1],{
 	exports.__esModule = true;
 	exports["default"] = undefined;
 
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(3);
 
-	var _storeShape = __webpack_require__(32);
+	var _storeShape = __webpack_require__(33);
 
 	var _storeShape2 = _interopRequireDefault(_storeShape);
 
-	var _warning = __webpack_require__(33);
+	var _warning = __webpack_require__(34);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -1181,7 +1181,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 64:
+/***/ 65:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1191,21 +1191,21 @@ webpackJsonp([1],{
 	exports.__esModule = true;
 	exports["default"] = connect;
 
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(3);
 
-	var _storeShape = __webpack_require__(32);
+	var _storeShape = __webpack_require__(33);
 
 	var _storeShape2 = _interopRequireDefault(_storeShape);
 
-	var _shallowEqual = __webpack_require__(65);
+	var _shallowEqual = __webpack_require__(66);
 
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
-	var _wrapActionCreators = __webpack_require__(66);
+	var _wrapActionCreators = __webpack_require__(67);
 
 	var _wrapActionCreators2 = _interopRequireDefault(_wrapActionCreators);
 
-	var _warning = __webpack_require__(33);
+	var _warning = __webpack_require__(34);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -1213,11 +1213,11 @@ webpackJsonp([1],{
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _hoistNonReactStatics = __webpack_require__(55);
+	var _hoistNonReactStatics = __webpack_require__(56);
 
 	var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-	var _invariant = __webpack_require__(56);
+	var _invariant = __webpack_require__(57);
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
@@ -1580,7 +1580,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 65:
+/***/ 66:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1612,7 +1612,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 66:
+/***/ 67:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1630,7 +1630,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 90:
+/***/ 94:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -1643,7 +1643,7 @@ webpackJsonp([1],{
 	exports.addTodo = addTodo;
 	exports.completeTodo = completeTodo;
 	exports.setVisibilityFilter = setVisibilityFilter;
-	/**
+	/*
 	 * action 类型
 	 */
 
@@ -1651,44 +1651,37 @@ webpackJsonp([1],{
 	var COMPLETE_TODO = exports.COMPLETE_TODO = 'COMPLETE_TODO';
 	var SET_VISIBILITY_FILTER = exports.SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER';
 
-	/**
-	 * 其他常量
+	/*
+	 * 其它的常量
 	 */
+
 	var VisibilityFilters = exports.VisibilityFilters = {
 	  SHOW_ALL: 'SHOW_ALL',
 	  SHOW_COMPLETED: 'SHOW_COMPLETED',
 	  SHOW_ACTIVE: 'SHOW_ACTIVE'
 	};
 
-	/**
+	/*
 	 * action 创建函数
 	 */
+
 	function addTodo(text) {
-	  return {
-	    type: ADD_TODO,
-	    text: text
-	  };
+	  return { type: ADD_TODO, text: text };
 	}
 
 	function completeTodo(index) {
-	  return {
-	    type: COMPLETE_TODO,
-	    index: index
-	  };
+	  return { type: COMPLETE_TODO, index: index };
 	}
 
 	function setVisibilityFilter(filter) {
-	  return {
-	    type: SET_VISIBILITY_FILTER,
-	    filter: filter
-	  };
+	  return { type: SET_VISIBILITY_FILTER, filter: filter };
 	}
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "actions.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 
-/***/ 132:
+/***/ 147:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -1701,7 +1694,7 @@ webpackJsonp([1],{
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(3);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -1711,10 +1704,7 @@ webpackJsonp([1],{
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * AddTodo
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var AddTodo = function (_Component) {
 	  _inherits(AddTodo, _Component);
@@ -1756,16 +1746,18 @@ webpackJsonp([1],{
 	  return AddTodo;
 	}(_react.Component);
 
+	exports.default = AddTodo;
+
+
 	AddTodo.propTypes = {
 	  onAddClick: _react.PropTypes.func.isRequired
 	};
-	exports.default = AddTodo;
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "AddTodo.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 
-/***/ 133:
+/***/ 148:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -1778,7 +1770,7 @@ webpackJsonp([1],{
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(3);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -1788,10 +1780,7 @@ webpackJsonp([1],{
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var Footer = function (_Component) {
 	  _inherits(Footer, _Component);
@@ -1810,6 +1799,7 @@ webpackJsonp([1],{
 	      if (filter === this.props.filter) {
 	        return name;
 	      }
+
 	      return _react2.default.createElement(
 	        'a',
 	        { href: '#', onClick: function onClick(e) {
@@ -1827,11 +1817,12 @@ webpackJsonp([1],{
 	        null,
 	        'Show:',
 	        ' ',
-	        this.renderFilter('SHOW_ALL', 'ALL'),
+	        this.renderFilter('SHOW_ALL', 'All'),
 	        ', ',
 	        this.renderFilter('SHOW_COMPLETED', 'Completed'),
 	        ', ',
-	        this.renderFilter('SHOW_ACTIVE', 'Active')
+	        this.renderFilter('SHOW_ACTIVE', 'Active'),
+	        '.'
 	      );
 	    }
 	  }]);
@@ -1839,26 +1830,32 @@ webpackJsonp([1],{
 	  return Footer;
 	}(_react.Component);
 
+	exports.default = Footer;
+
+
 	Footer.propTypes = {
 	  onFilterChange: _react.PropTypes.func.isRequired,
 	  filter: _react.PropTypes.oneOf(['SHOW_ALL', 'SHOW_COMPLETED', 'SHOW_ACTIVE']).isRequired
 	};
-	exports.default = Footer;
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "Footer.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 
-/***/ 134:
+/***/ 149:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(3);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -1868,10 +1865,7 @@ webpackJsonp([1],{
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Todo
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var Todo = function (_Component) {
 	  _inherits(Todo, _Component);
@@ -1887,7 +1881,9 @@ webpackJsonp([1],{
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'li',
-	        { onClick: this.props.onClick, style: {
+	        {
+	          onClick: this.props.onClick,
+	          style: {
 	            textDecoration: this.props.completed ? 'line-through' : 'none',
 	            cursor: this.props.completed ? 'default' : 'pointer'
 	          } },
@@ -1899,6 +1895,9 @@ webpackJsonp([1],{
 	  return Todo;
 	}(_react.Component);
 
+	exports.default = Todo;
+
+
 	Todo.propTypes = {
 	  onClick: _react.PropTypes.func.isRequired,
 	  text: _react.PropTypes.string.isRequired,
@@ -1909,7 +1908,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 135:
+/***/ 150:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -1924,11 +1923,11 @@ webpackJsonp([1],{
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(3);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Todo = __webpack_require__(134);
+	var _Todo = __webpack_require__(149);
 
 	var _Todo2 = _interopRequireDefault(_Todo);
 
@@ -1938,13 +1937,10 @@ webpackJsonp([1],{
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * TodoList
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-
-	var TodoList = function (_Comnponent) {
-	  _inherits(TodoList, _Comnponent);
+	var TodoList = function (_Component) {
+	  _inherits(TodoList, _Component);
 
 	  function TodoList() {
 	    _classCallCheck(this, TodoList);
@@ -1961,8 +1957,10 @@ webpackJsonp([1],{
 	        'ul',
 	        null,
 	        this.props.todos.map(function (todo, index) {
-	          _react2.default.createElement(_Todo2.default, _extends({}, todo, { key: index, onClick: function onClick() {
-	              _this2.props.onTodoClick(index);
+	          return _react2.default.createElement(_Todo2.default, _extends({}, todo, {
+	            key: index,
+	            onClick: function onClick() {
+	              return _this2.props.onTodoClick(index);
 	            } }));
 	        })
 	      );
@@ -1970,7 +1968,10 @@ webpackJsonp([1],{
 	  }]);
 
 	  return TodoList;
-	}(Comnponent);
+	}(_react.Component);
+
+	exports.default = TodoList;
+
 
 	TodoList.propTypes = {
 	  onTodoClick: _react.PropTypes.func.isRequired,
@@ -1979,13 +1980,12 @@ webpackJsonp([1],{
 	    completed: _react.PropTypes.bool.isRequired
 	  }).isRequired).isRequired
 	};
-	exports.default = TodoList;
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "TodoList.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 
-/***/ 136:
+/***/ 151:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -1998,23 +1998,23 @@ webpackJsonp([1],{
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(3);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactRedux = __webpack_require__(31);
+	var _reactRedux = __webpack_require__(32);
 
-	var _actions = __webpack_require__(90);
+	var _actions = __webpack_require__(94);
 
-	var _AddTodo = __webpack_require__(132);
+	var _AddTodo = __webpack_require__(147);
 
 	var _AddTodo2 = _interopRequireDefault(_AddTodo);
 
-	var _TodoList = __webpack_require__(135);
+	var _TodoList = __webpack_require__(150);
 
 	var _TodoList2 = _interopRequireDefault(_TodoList);
 
-	var _Footer = __webpack_require__(133);
+	var _Footer = __webpack_require__(148);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -2024,10 +2024,7 @@ webpackJsonp([1],{
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * App
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var App = function (_Component) {
 	  _inherits(App, _Component);
@@ -2041,22 +2038,28 @@ webpackJsonp([1],{
 	  _createClass(App, [{
 	    key: 'render',
 	    value: function render() {
+	      // Injected by connect() call:
 	      var _props = this.props;
 	      var dispatch = _props.dispatch;
 	      var visibleTodos = _props.visibleTodos;
-	      var visibilityFilters = _props.visibilityFilters;
+	      var visibilityFilter = _props.visibilityFilter;
 
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_AddTodo2.default, { onAddClick: function onAddClick(text) {
-	            dispatch((0, _actions.addTodo)(text));
+	        _react2.default.createElement(_AddTodo2.default, {
+	          onAddClick: function onAddClick(text) {
+	            return dispatch((0, _actions.addTodo)(text));
 	          } }),
-	        _react2.default.createElement(_TodoList2.default, { todos: visibleTodos, onTodoClick: function onTodoClick(index) {
-	            dispatch((0, _actions.completeTodo)(index));
+	        _react2.default.createElement(_TodoList2.default, {
+	          todos: visibleTodos,
+	          onTodoClick: function onTodoClick(index) {
+	            return dispatch((0, _actions.completeTodo)(index));
 	          } }),
-	        _react2.default.createElement(_Footer2.default, { filter: visibilityFilters, onFilterChange: function onFilterChange(nextFilter) {
-	            dispatch((0, _actions.setVisibilityFilter)(nextFilter));
+	        _react2.default.createElement(_Footer2.default, {
+	          filter: visibilityFilter,
+	          onFilterChange: function onFilterChange(nextFilter) {
+	            return dispatch((0, _actions.setVisibilityFilter)(nextFilter));
 	          } })
 	      );
 	    }
@@ -2073,7 +2076,6 @@ webpackJsonp([1],{
 	  visibilityFilter: _react.PropTypes.oneOf(['SHOW_ALL', 'SHOW_COMPLETED', 'SHOW_ACTIVE']).isRequired
 	};
 
-
 	function selectTodos(todos, filter) {
 	  switch (filter) {
 	    case _actions.VisibilityFilters.SHOW_ALL:
@@ -2089,6 +2091,8 @@ webpackJsonp([1],{
 	  }
 	}
 
+	// Which props do we want to inject, given the global state?
+	// Note: use https://github.com/faassen/reselect for better performance.
 	function select(state) {
 	  return {
 	    visibleTodos: selectTodos(state.todos, state.visibilityFilter),
@@ -2096,48 +2100,43 @@ webpackJsonp([1],{
 	  };
 	}
 
+	// 包装 component ，注入 dispatch 和 state 到其默认的 connect(select)(App) 中；
 	exports.default = (0, _reactRedux.connect)(select)(App);
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "App.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 
-/***/ 137:
+/***/ 152:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(3);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactDom = __webpack_require__(23);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
+	var _reactDom = __webpack_require__(18);
 
 	var _redux = __webpack_require__(14);
 
-	var _reactRedux = __webpack_require__(31);
+	var _reactRedux = __webpack_require__(32);
 
-	var _App = __webpack_require__(136);
+	var _App = __webpack_require__(151);
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _reducers = __webpack_require__(138);
+	var _reducers = __webpack_require__(153);
 
 	var _reducers2 = _interopRequireDefault(_reducers);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	/**
-	 * todo
-	 */
 	var store = (0, _redux.createStore)(_reducers2.default);
 
 	var rootElement = document.getElementById('root');
-
 	(0, _reactDom.render)(_react2.default.createElement(
 	  _reactRedux.Provider,
 	  { store: store },
@@ -2148,7 +2147,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 138:
+/***/ 153:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -2161,17 +2160,12 @@ webpackJsonp([1],{
 
 	var _redux = __webpack_require__(14);
 
-	var _actions = __webpack_require__(90);
+	var _actions = __webpack_require__(94);
 
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } } /**
-	                                                                                                                                                                                                     * 
-	                                                                                                                                                                                                     */
-
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 	var SHOW_ALL = _actions.VisibilityFilters.SHOW_ALL;
 
-
-	console.log(SHOW_ALL);
 
 	function visibilityFilter() {
 	  var state = arguments.length <= 0 || arguments[0] === undefined ? SHOW_ALL : arguments[0];
@@ -2196,13 +2190,18 @@ webpackJsonp([1],{
 	        completed: false
 	      }]);
 	    case _actions.COMPLETE_TODO:
-	      return [].concat(_toConsumableArray(state.slice(0, action.index)), [Object.assign({}, state[action.index], { completed: true })], _toConsumableArray(state.slice(action.index + 1)));
+	      return [].concat(_toConsumableArray(state.slice(0, action.index)), [Object.assign({}, state[action.index], {
+	        completed: true
+	      })], _toConsumableArray(state.slice(action.index + 1)));
 	    default:
 	      return state;
 	  }
 	}
 
-	var todoApp = (0, _redux.combineReducers)(visibilityFilter, todos);
+	var todoApp = (0, _redux.combineReducers)({
+	  visibilityFilter: visibilityFilter,
+	  todos: todos
+	});
 
 	exports.default = todoApp;
 

@@ -1,37 +1,46 @@
 'use strict';
-
 import React, {Component} from 'react';
-let EventEmitter = require('../../browser/javascript/emitter/emitter');
 
 /*
  * 页面加载更多组件
  * */
-module.exports = React.createClass({
-    // 初始化
-    getInitialState: function () {
-        return {
-            
+class More extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            isLoading: 0
+        };
+    }
+
+    /******************
+     * componentWillReceiveProps
+    */
+    componentWillReceiveProps(nextProps) {
+        // console.log(nextProps.isLoading);
+        this.setState({
+            isLoading: nextProps.isLoading
+        });
+    }
+
+    handleTouchStart(event) {
+
+        if(this.props.loadMore) {
+            this.props.loadMore();
         }
-    },
-    // 渲染DOM前
-    componentWillMount: function () {
 
-    },
-    // 渲染DOM后
-    componentDidMount: function () {
+    }
 
-    },
-    // 加载更多
-    loadMore: function () {
-        console.log(this.props.pageno);
-        EventEmitter.dispatch(this.props.type, this.props.pageno);
-    },
-    render: function () {
+    render() {
+
         return (
             <div className="page-more">
-                <button type="button" className="mui-btn mui-btn-danger mui-icon iconfont icon-lower brad-1" onTouchStart={ this.loadMore }> 加载更多
-                </button>
+                <button type="button" className="mui-btn mui-btn-danger mui-icon iconfont icon-lower brad-1" onTouchStart={ this.handleTouchStart.bind(this) }>加载更多{this.state.isLoading ? '...' : ''}</button>
             </div>
-        )
+        );
+
     }
-});
+
+}
+
+export default More;
