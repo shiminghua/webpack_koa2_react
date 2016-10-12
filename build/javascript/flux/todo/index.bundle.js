@@ -3,7 +3,7 @@ webpackJsonp([4],{
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(134);
+	module.exports = __webpack_require__(145);
 
 
 /***/ },
@@ -15,8 +15,8 @@ webpackJsonp([4],{
 
 	'use strict';
 
-	var AppDispatcher = __webpack_require__(92);
-	var TodoConstants = __webpack_require__(91);
+	var AppDispatcher = __webpack_require__(100);
+	var TodoConstants = __webpack_require__(99);
 
 	var TodoActions = {
 
@@ -76,94 +76,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 91:
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	'use strict';
-
-	module.exports = {
-	    TODO_CREATE: 'TODO_CREATE',
-	    TODO_UPDATE_TEXT: 'TODO_UPDATE_TEXT',
-	    TODO_UNDO_COMPLETE: 'TODO_UNDO_COMPLETE',
-	    TODO_COMPLETE: 'TODO_COMPLETE',
-	    TODO_TOGGLE_COMPLETE_ALL: 'TODO_TOGGLE_COMPLETE_ALL',
-	    TODO_DESTROY: 'TODO_DESTROY',
-	    TODO_DESTROY_COMPLETED: 'TODO_DESTROY_COMPLETED'
-	};
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "TodoConstants.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-
-/***/ 92:
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	'use strict';
-
-	var Dispatcher = __webpack_require__(132).Dispatcher;
-
-	module.exports = new Dispatcher();
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "AppDispatcher.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-
-/***/ 93:
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	'use strict';
-
-	var React = __webpack_require__(3);
-	// let TodoStore = require('../stores/TodoStore');
-	var TodoActions = __webpack_require__(31);
-
-	var TodoTextInput = React.createClass({
-	    displayName: 'TodoTextInput',
-
-
-	    getInitialState: function getInitialState() {
-	        return {
-	            inputValue: ''
-	        };
-	    },
-
-	    handleInputValueChange: function handleInputValueChange(event) {
-	        var inputValue = event.target.value;
-	        this.setState({
-	            inputValue: inputValue
-	        });
-	    },
-
-	    handleFormSubmit: function handleFormSubmit(event) {
-	        event.preventDefault();
-	        TodoActions.create(this.state.inputValue);
-	    },
-
-	    render: function render() {
-
-	        return React.createElement(
-	            'form',
-	            null,
-	            React.createElement('input', { type: 'text', value: this.state.inputValue, onChange: this.handleInputValueChange }),
-	            React.createElement('input', { type: 'submit', value: '提交', onClick: this.handleFormSubmit })
-	        );
-	    }
-
-	});
-
-	module.exports = TodoTextInput;
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "TodoTextInput.react.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-
-/***/ 124:
+/***/ 57:
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -472,7 +385,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 131:
+/***/ 58:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -527,7 +440,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 132:
+/***/ 59:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -539,12 +452,12 @@ webpackJsonp([4],{
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 */
 
-	module.exports.Dispatcher = __webpack_require__(133);
+	module.exports.Dispatcher = __webpack_require__(60);
 
 
 /***/ },
 
-/***/ 133:
+/***/ 60:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -566,7 +479,7 @@ webpackJsonp([4],{
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-	var invariant = __webpack_require__(131);
+	var invariant = __webpack_require__(58);
 
 	var _prefix = 'ID_';
 
@@ -781,16 +694,103 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 134:
+/***/ 99:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
-	var React = __webpack_require__(3);
-	var ReactDom = __webpack_require__(18);
-	var TodoApp = __webpack_require__(139);
+	module.exports = {
+	    TODO_CREATE: 'TODO_CREATE',
+	    TODO_UPDATE_TEXT: 'TODO_UPDATE_TEXT',
+	    TODO_UNDO_COMPLETE: 'TODO_UNDO_COMPLETE',
+	    TODO_COMPLETE: 'TODO_COMPLETE',
+	    TODO_TOGGLE_COMPLETE_ALL: 'TODO_TOGGLE_COMPLETE_ALL',
+	    TODO_DESTROY: 'TODO_DESTROY',
+	    TODO_DESTROY_COMPLETED: 'TODO_DESTROY_COMPLETED'
+	};
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "TodoConstants.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+
+/***/ 100:
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	var Dispatcher = __webpack_require__(59).Dispatcher;
+
+	module.exports = new Dispatcher();
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "AppDispatcher.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+
+/***/ 101:
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	// let TodoStore = require('../stores/TodoStore');
+	var TodoActions = __webpack_require__(31);
+
+	var TodoTextInput = React.createClass({
+	    displayName: 'TodoTextInput',
+
+
+	    getInitialState: function getInitialState() {
+	        return {
+	            inputValue: ''
+	        };
+	    },
+
+	    handleInputValueChange: function handleInputValueChange(event) {
+	        var inputValue = event.target.value;
+	        this.setState({
+	            inputValue: inputValue
+	        });
+	    },
+
+	    handleFormSubmit: function handleFormSubmit(event) {
+	        event.preventDefault();
+	        TodoActions.create(this.state.inputValue);
+	    },
+
+	    render: function render() {
+
+	        return React.createElement(
+	            'form',
+	            null,
+	            React.createElement('input', { type: 'text', value: this.state.inputValue, onChange: this.handleInputValueChange }),
+	            React.createElement('input', { type: 'submit', value: '提交', onClick: this.handleFormSubmit })
+	        );
+	    }
+
+	});
+
+	module.exports = TodoTextInput;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "TodoTextInput.react.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+
+/***/ 145:
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var ReactDom = __webpack_require__(13);
+	var TodoApp = __webpack_require__(150);
 
 	ReactDom.render(React.createElement(TodoApp, null), document.getElementById('root'));
 
@@ -798,16 +798,16 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 135:
+/***/ 146:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
-	var AppDispatcher = __webpack_require__(92);
-	var EventEmitter = __webpack_require__(124).EventEmitter;
-	var TodoConstants = __webpack_require__(91);
+	var AppDispatcher = __webpack_require__(100);
+	var EventEmitter = __webpack_require__(57).EventEmitter;
+	var TodoConstants = __webpack_require__(99);
 	var assign = __webpack_require__(5);
 
 	var CHANGE_EVENT = 'change';
@@ -932,14 +932,14 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 136:
+/***/ 147:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
-	var React = __webpack_require__(3);
+	var React = __webpack_require__(1);
 	var TodoActions = __webpack_require__(31);
 
 	var Footer = React.createClass({
@@ -1014,16 +1014,16 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 137:
+/***/ 148:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
-	var React = __webpack_require__(3);
+	var React = __webpack_require__(1);
 	var TodoActions = __webpack_require__(31);
-	var TodoTextInput = __webpack_require__(93);
+	var TodoTextInput = __webpack_require__(101);
 
 	var Header = React.createClass({
 	    displayName: 'Header',
@@ -1054,17 +1054,17 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 138:
+/***/ 149:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
-	var React = __webpack_require__(3);
+	var React = __webpack_require__(1);
 	var ReactPropTypes = React.PropTypes;
 	var TodoActions = __webpack_require__(31);
-	var TodoItem = __webpack_require__(140);
+	var TodoItem = __webpack_require__(151);
 
 	var MainSection = React.createClass({
 	    displayName: 'MainSection',
@@ -1119,18 +1119,18 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 139:
+/***/ 150:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
-	var React = __webpack_require__(3);
-	var Header = __webpack_require__(137);
-	var Footer = __webpack_require__(136);
-	var MainSection = __webpack_require__(138);
-	var TodoStore = __webpack_require__(135);
+	var React = __webpack_require__(1);
+	var Header = __webpack_require__(148);
+	var Footer = __webpack_require__(147);
+	var MainSection = __webpack_require__(149);
+	var TodoStore = __webpack_require__(146);
 
 	function getTodoState() {
 	    return {
@@ -1163,7 +1163,7 @@ webpackJsonp([4],{
 	            React.createElement(MainSection, {
 	                allTodos: this.state.allTodos,
 	                areAllComplete: this.state.areAllComplete }),
-	            React.createElement(Footer, null)
+	            React.createElement(Footer, { allTodos: this.state.allTodos })
 	        );
 	    },
 
@@ -1179,17 +1179,17 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 140:
+/***/ 151:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
-	var React = __webpack_require__(3);
+	var React = __webpack_require__(1);
 	var ReactPropTypes = React.PropTypes;
 	var TodoActions = __webpack_require__(31);
-	var TodoTextInput = __webpack_require__(93);
+	var TodoTextInput = __webpack_require__(101);
 
 	// let cx = require('react/lib/cx');
 

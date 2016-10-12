@@ -34,7 +34,7 @@ let TodoApp = React.createClass({
                 <MainSection
                     allTodos={this.state.allTodos}
                     areAllComplete={this.state.areAllComplete} />
-                <Footer />
+                <Footer allTodos={this.state.allTodos} />
             </div>
         );
     },

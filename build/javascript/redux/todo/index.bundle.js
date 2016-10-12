@@ -3,7 +3,7 @@ webpackJsonp([1],{
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(152);
+	module.exports = __webpack_require__(163);
 
 
 /***/ },
@@ -85,7 +85,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 14:
+/***/ 15:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -585,11 +585,11 @@ webpackJsonp([1],{
 	exports.__esModule = true;
 	exports.connect = exports.Provider = undefined;
 
-	var _Provider = __webpack_require__(64);
+	var _Provider = __webpack_require__(69);
 
 	var _Provider2 = _interopRequireDefault(_Provider);
 
-	var _connect = __webpack_require__(65);
+	var _connect = __webpack_require__(70);
 
 	var _connect2 = _interopRequireDefault(_connect);
 
@@ -607,7 +607,7 @@ webpackJsonp([1],{
 
 	exports.__esModule = true;
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	exports["default"] = _react.PropTypes.shape({
 	  subscribe: _react.PropTypes.func.isRequired,
@@ -982,7 +982,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 56:
+/***/ 61:
 /***/ function(module, exports) {
 
 	/**
@@ -1039,7 +1039,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 57:
+/***/ 62:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -1097,7 +1097,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 64:
+/***/ 69:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1105,7 +1105,7 @@ webpackJsonp([1],{
 	exports.__esModule = true;
 	exports["default"] = undefined;
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _storeShape = __webpack_require__(33);
 
@@ -1181,7 +1181,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 65:
+/***/ 70:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1191,17 +1191,17 @@ webpackJsonp([1],{
 	exports.__esModule = true;
 	exports["default"] = connect;
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _storeShape = __webpack_require__(33);
 
 	var _storeShape2 = _interopRequireDefault(_storeShape);
 
-	var _shallowEqual = __webpack_require__(66);
+	var _shallowEqual = __webpack_require__(71);
 
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
-	var _wrapActionCreators = __webpack_require__(67);
+	var _wrapActionCreators = __webpack_require__(72);
 
 	var _wrapActionCreators2 = _interopRequireDefault(_wrapActionCreators);
 
@@ -1213,11 +1213,11 @@ webpackJsonp([1],{
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _hoistNonReactStatics = __webpack_require__(56);
+	var _hoistNonReactStatics = __webpack_require__(61);
 
 	var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-	var _invariant = __webpack_require__(57);
+	var _invariant = __webpack_require__(62);
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
@@ -1580,7 +1580,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 66:
+/***/ 71:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1612,7 +1612,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 67:
+/***/ 72:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1620,7 +1620,7 @@ webpackJsonp([1],{
 	exports.__esModule = true;
 	exports["default"] = wrapActionCreators;
 
-	var _redux = __webpack_require__(14);
+	var _redux = __webpack_require__(15);
 
 	function wrapActionCreators(actionCreators) {
 	  return function (dispatch) {
@@ -1630,7 +1630,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 94:
+/***/ 102:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -1681,7 +1681,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 147:
+/***/ 158:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -1694,7 +1694,7 @@ webpackJsonp([1],{
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -1757,7 +1757,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 148:
+/***/ 159:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -1770,7 +1770,7 @@ webpackJsonp([1],{
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -1842,7 +1842,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 149:
+/***/ 160:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -1855,7 +1855,7 @@ webpackJsonp([1],{
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -1908,7 +1908,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 150:
+/***/ 161:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -1923,11 +1923,11 @@ webpackJsonp([1],{
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Todo = __webpack_require__(149);
+	var _Todo = __webpack_require__(160);
 
 	var _Todo2 = _interopRequireDefault(_Todo);
 
@@ -1985,7 +1985,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 151:
+/***/ 162:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -1998,23 +1998,23 @@ webpackJsonp([1],{
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
 	var _reactRedux = __webpack_require__(32);
 
-	var _actions = __webpack_require__(94);
+	var _actions = __webpack_require__(102);
 
-	var _AddTodo = __webpack_require__(147);
+	var _AddTodo = __webpack_require__(158);
 
 	var _AddTodo2 = _interopRequireDefault(_AddTodo);
 
-	var _TodoList = __webpack_require__(150);
+	var _TodoList = __webpack_require__(161);
 
 	var _TodoList2 = _interopRequireDefault(_TodoList);
 
-	var _Footer = __webpack_require__(148);
+	var _Footer = __webpack_require__(159);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -2107,28 +2107,28 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 152:
+/***/ 163:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactDom = __webpack_require__(18);
+	var _reactDom = __webpack_require__(13);
 
-	var _redux = __webpack_require__(14);
+	var _redux = __webpack_require__(15);
 
 	var _reactRedux = __webpack_require__(32);
 
-	var _App = __webpack_require__(151);
+	var _App = __webpack_require__(162);
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _reducers = __webpack_require__(153);
+	var _reducers = __webpack_require__(164);
 
 	var _reducers2 = _interopRequireDefault(_reducers);
 
@@ -2147,7 +2147,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 153:
+/***/ 164:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\git\\webpack_koa2_react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -2158,9 +2158,9 @@ webpackJsonp([1],{
 	  value: true
 	});
 
-	var _redux = __webpack_require__(14);
+	var _redux = __webpack_require__(15);
 
-	var _actions = __webpack_require__(94);
+	var _actions = __webpack_require__(102);
 
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
